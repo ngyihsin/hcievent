@@ -1,0 +1,42 @@
+  {
+  "name": "HCI Event Test 2",
+  "description": "Notify HCI event 2",
+  "launch_path": "/index.html",
+  "type": "certified",
+  "default_locale": "en-US",
+  "locales": {
+    "en-US": {
+      "name": "Template",
+      "description": "Template"
+    },
+    "fr-CA": {
+      "name": "Template",
+      "description": "Template"
+    },
+    "es-US": {
+      "name": "Template",
+      "description": "Template"
+    },
+    "zh-TW": {
+      "name": "樣板",
+      "description": "樣板"
+    }
+  },
+  "icons": {
+    "56": "/style/icons/Default.png"
+  },
+  "chrome": {
+    "statusbar": "overlap"
+  },
+  "orientation": "default",
+  "activities": {},
+  "messages": [
+    { "notification": "/index.html" },
+    { "nfc-hci-event-transaction": "/index.html" }
+  ],
+  "permissions": {
+    "secureelement-manage": {},
+    "nfc-hci-events":{}
+  },
+  "secure_element_access": ["*/*"]
+}
